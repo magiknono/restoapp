@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="row">
+    <div class="text-center">
+
+<%= bootstrap_form_for([@restaurant, @review], layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-5") do |f| %>
+  <%= f.text_field :content %>
+  <%= f.text_field :rating %>
+  <%= f.submit "Create Review", class: "btn btn-success" %>
+<% end %>
+</div>
+</div>
+</div>

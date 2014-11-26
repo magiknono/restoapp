@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+<p><%= @restaurant.name %></p>
+<p><%= @restaurant.address %></p>
+<p><%= @restaurant.phone_number %></p>
+<p><%= @restaurant.category %></p>
+<% @reviews.each  do |r| %>
+<p><%= r.content %></p>
+<% end %>
+</div>
+</div>
